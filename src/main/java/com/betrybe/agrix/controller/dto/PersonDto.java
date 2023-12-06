@@ -6,7 +6,7 @@ import com.betrybe.agrix.security.Role;
 /**
  * The type Person dto.
  */
-public record PersonDto(Long id, String username, Role role) {
+public record PersonDto(Long id, String username, String password, Role role) {
 
   /**
    * From entity person dto.
@@ -18,10 +18,22 @@ public record PersonDto(Long id, String username, Role role) {
     return new PersonDto(
         person.getId(),
         person.getUsername(),
+        person.getPassword(),
         person.getRole()
     );
   }
 
-  ;
+  /**
+   * To entity person.
+   *
+   * @return the person
+   */
+  public Person toEntity() {
+    Person person = new Person();
+    person.setUsername(username);
+    person.setPassword(password);
+    person.setRole(role);
+    return person;
+  }
 
 }

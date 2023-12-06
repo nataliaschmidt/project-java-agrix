@@ -9,7 +9,6 @@ import jakarta.transaction.Transactional;
 import java.time.LocalDate;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 /**
@@ -89,10 +88,10 @@ public class CropService {
       return "Esta associação já existe.";
     }
 
-      crop.getFertilizers().add(fertilizer);
-      cropRepository.save(crop);
+    crop.getFertilizers().add(fertilizer);
+    cropRepository.save(crop);
 
-      return "Fertilizante e plantação associados com sucesso!";
+    return "Fertilizante e plantação associados com sucesso!";
 
   }
 }
