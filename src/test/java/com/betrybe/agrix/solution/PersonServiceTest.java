@@ -6,10 +6,10 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 
-import com.betrybe.agrix.ebytr.staff.entity.Person;
-import com.betrybe.agrix.ebytr.staff.exception.PersonNotFoundException;
-import com.betrybe.agrix.ebytr.staff.repository.PersonRepository;
-import com.betrybe.agrix.ebytr.staff.service.PersonService;
+import com.betrybe.agrix.model.entities.Person;
+import com.betrybe.agrix.service.exceptions.PersonNotFoundException;
+import com.betrybe.agrix.model.repositories.PersonRepository;
+import com.betrybe.agrix.service.PersonService;
 import com.betrybe.agrix.solution.mock.MockPerson;
 import java.util.Optional;
 import org.junit.jupiter.api.DisplayName;

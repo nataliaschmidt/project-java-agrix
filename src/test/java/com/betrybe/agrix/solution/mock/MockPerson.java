@@ -1,7 +1,7 @@
 package com.betrybe.agrix.solution.mock;
 
-import com.betrybe.agrix.ebytr.staff.entity.Person;
-import com.betrybe.agrix.ebytr.staff.security.Role;
+import com.betrybe.agrix.model.entities.Person;
+import com.betrybe.agrix.security.Role;
 
 /**
  * The type Person mock.
