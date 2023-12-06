@@ -40,6 +40,12 @@ public class TokenService {
   }
 
 
+  /**
+   * Validate token string.
+   *
+   * @param token the token
+   * @return the string
+   */
   public String validateToken(String token) {
     Algorithm algorithm = Algorithm.HMAC256(secret);
     return JWT.require(algorithm)
