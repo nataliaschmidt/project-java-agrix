@@ -142,7 +142,7 @@ public class Person implements UserDetails, GrantedAuthority {
   @JsonIgnore
   @Override
   public String getAuthority() {
-   return this.getRole().getName();
+    return this.getRole().getName();
   }
 }
 
